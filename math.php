@@ -8,5 +8,14 @@
 </head>
 <body>
     
+<?php 
+
+echo "56 + 45 is " . 56 + 45; #will yield the result directly
+echo "<br>";
+echo "56 - 45 is " . 56 - 45;
+
+
+?>
+    
 </body>
 </html>

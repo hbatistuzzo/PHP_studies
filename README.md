@@ -22,3 +22,41 @@ Currently, we need to run services and stop MySQL80 before attempting to set the
 	- Matplotlib 3.5.3
 	- Scikit-learn 1.1
 
+---
+
+- Folder copy in XAMPP/htdocs/demo/
+- Access through http://localhost/demo/Course_Exercise_Files/demo/
+
+---
+
+## Exercise 2
+
+**Step 1: Make 2 variables called number1 and number2 and set 1 to value 10 and the other 20:**
+
+$number1 = 10;
+$number2 = 20;
+
+**Step 2: Add the two variables and display the sum with echo:**
+
+echo "$number1 + $number2 is " . $number1 + $number2 . "<br>"; //the break line is just good form since we have more stuff coming next
+
+**Step3: Make 2 Arrays with the same values, one regular and the other associative**
+
+
+- associative arrays are kinds that dont need to be ordered. They are called by labels.
+$number = array(10, 20, 49); # this is ordered
+print_r($number);
+
+echo "<br>";
+
+$names = array("first_name" => "Edwin", "last_name" => "Dias"); # this is associate array. We changed the key from the standard 0 to "first_name"! In a way it's like a dictionary I guess.
+
+```
+		$listA = array(23,24,4324,231,424);//common array
+
+		$listB = array('number' => 23) ;//associative array
+
+		echo $listA[0] . "<br>"; //will only work if we are selecting a single list, otherwise we need a print_r
+
+		echo $listB['number'] . "<br>";
+```

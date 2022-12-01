@@ -42,14 +42,10 @@ echo "$number1 + $number2 is " . $number1 + $number2 . "<br>"; //the break line 
 
 **Step3: Make 2 Arrays with the same values, one regular and the other associative**
 
-
 - associative arrays are kinds that dont need to be ordered. They are called by labels.
-$number = array(10, 20, 49); # this is ordered
-print_r($number);
-
-echo "<br>";
-
-$names = array("first_name" => "Edwin", "last_name" => "Dias"); # this is associate array. We changed the key from the standard 0 to "first_name"! In a way it's like a dictionary I guess.
+	- $number = array(10, 20, 49); # this is an ordered array
+	- print_r($number);
+	- $names = array("first_name" => "Edwin", "last_name" => "Dias"); # this is associate array. We changed the key from the standard 0 to "first_name"! In a way it's like a dictionary I guess.
 
 ```
 		$listA = array(23,24,4324,231,424);//common array

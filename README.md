@@ -103,3 +103,58 @@ switch($number2){
         echo"we could not find anything";
         break;
 }
+
+---
+
+## While Loops
+
+<?php
+
+// pure while syntax
+
+$i = 0; // a counter
+
+while($i < 10){
+
+    $i += 1;
+    echo "Our counter is $i" . "<br>";
+
+}
+
+?>
+
+---
+
+## For Loops
+
+<?php
+
+for($i = 0; $i < 10; $i++){ // initialize the counter inside the loop itself | then test the condition | THEN increment
+
+    echo $i . "<br>";
+
+}
+
+    echo "we are out of the loop now!";
+
+?>
+
+---
+
+## Foreach Loops
+
+- works only with arrays. The loop will go through the whole array.
+
+<?php
+
+$numbers = array(10,20,30,40,50,60);
+
+foreach($numbers as $number){ // $numbers is the array. $number will incorporate each element.
+
+    echo $number . "<br>";
+
+}
+
+?>
+
+---

@@ -56,3 +56,19 @@ echo "$number1 + $number2 is " . $number1 + $number2 . "<br>"; //the break line 
 
 		echo $listB['number'] . "<br>";
 ```
+
+## If statements are super important
+
+```
+if(4 == "4"){ \\ equal to...
+    echo "4 is equal to '4'. It is known, muad'dib";
+
+}
+
+if(4 === "4"){ \\ identical to...
+    echo "nah, muad'dib";
+
+}
+```
+
+- This makes all the difference. == works between data types. === does not

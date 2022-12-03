@@ -219,6 +219,7 @@ switch($condition){
 ?>
 
 ---
+---
 
 # Custom Functions
 
@@ -248,6 +249,22 @@ function init(){
 }
 
 init(); // THIS here is the only single line that is actually being run.
+
+?>
+
+---
+
+## Function parameters
+
+<?php
+
+function exclamate($message){
+
+    echo $message . "!!!!";
+
+}
+
+exclamate("Hello there");
 
 ?>
 

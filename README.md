@@ -77,6 +77,7 @@ if(4 === "4"){ \\ identical to...
 
 ## IF statements VS Switches:
 
+```
 // $number = 4;
 
 // if($number < 10){
@@ -103,6 +104,7 @@ switch($number2){
         echo"we could not find anything";
         break;
 }
+```
 
 ---
 

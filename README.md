@@ -270,4 +270,61 @@ exclamate("Hello there");
 
 ---
 
+## Function return values
+
+<?php
+
+function addNumbers($var1, $var2){
+
+    $sum = $var1 + $var2; // but now we want to return the data
+    return $sum;
+
+}
+
+$result = addNumbers(5,10);
+
+echo $result . "<br>"; // now I can print the result
+
+$result = addNumbers($result,10); // I can even use the result in the function itself again, and overwrite the value of $result
+
+echo $result;
+
+?>
+
+---
+
 ## Global Variable and Scope
+
+<?php
+
+$x = "outside"; //global variable
+
+function convert(){
+
+    $x = "inside"; //local variable
+}
+
+echo $x; // yields outside
+
+echo "<br>";
+
+convert();
+
+echo $x; // yields outside too. It always echo the global variable, unless...
+
+function convert2(){
+    global $x; // I specifically declare it to be global inside the function
+    $x = "inside"; // this is not local anymore
+}
+
+echo "<br>";
+
+convert2();
+
+echo $x; // yields inside. This variable $x has changed!
+
+?>
+
+---
+
+## Constants

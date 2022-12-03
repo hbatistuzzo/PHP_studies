@@ -270,3 +270,4 @@ exclamate("Hello there");
 
 ---
 
+## Global Variable and Scope

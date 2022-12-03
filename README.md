@@ -295,6 +295,7 @@ echo $result;
 
 ## Global Variable and Scope
 
+```
 <?php
 
 $x = "outside"; //global variable
@@ -324,6 +325,7 @@ convert2();
 echo $x; // yields inside. This variable $x has changed!
 
 ?>
+```
 
 ---
 

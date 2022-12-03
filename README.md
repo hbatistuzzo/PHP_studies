@@ -108,6 +108,7 @@ switch($number2){
 
 ## While Loops
 
+```
 <?php
 
 // pure while syntax
@@ -118,15 +119,16 @@ while($i < 10){
 
     $i += 1;
     echo "Our counter is $i" . "<br>";
-
 }
 
 ?>
+```
 
 ---
 
 ## For Loops
 
+```
 <?php
 
 for($i = 0; $i < 10; $i++){ // initialize the counter inside the loop itself | then test the condition | THEN increment
@@ -138,6 +140,7 @@ for($i = 0; $i < 10; $i++){ // initialize the counter inside the loop itself | t
     echo "we are out of the loop now!";
 
 ?>
+```
 
 ---
 
@@ -145,6 +148,7 @@ for($i = 0; $i < 10; $i++){ // initialize the counter inside the loop itself | t
 
 - works only with arrays. The loop will go through the whole array.
 
+```
 <?php
 
 $numbers = array(10,20,30,40,50,60);
@@ -156,6 +160,7 @@ foreach($numbers as $number){ // $numbers is the array. $number will incorporate
 }
 
 ?>
+```
 
 ---
 
@@ -163,18 +168,9 @@ foreach($numbers as $number){ // $numbers is the array. $number will incorporate
 
 <?php  
 
-/*  Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
+ // Step 1: Make an if Statement with elseif and else to finally display string saying, I love PHP
 
-
-
-	Step 2: Make a forloop  that displays 10 numbers
-
-
-	Step 3 : Make a switch Statement that test againts one condition with 5 cases
-
- */
-
- // Step 1
+```
  if(4 < 3){
 
 	echo "this will not work dude";}
@@ -184,9 +180,11 @@ foreach($numbers as $number){ // $numbers is the array. $number will incorporate
 
 	else{
 		echo "this will not work dude";}
+```
 
 //Step 2: Make a forloop  that displays 10 numbers
 
+```
 echo "<br>";
 
 for($i=1;$i<11;$i++){
@@ -194,9 +192,11 @@ for($i=1;$i<11;$i++){
 }
 
 echo "<br>";
+```
 
 //Step 3 : Make a switch Statement that test againts one condition with 5 cases
 
+```
 $condition = 100;
 
 switch($condition){
@@ -217,12 +217,14 @@ switch($condition){
 		break;
 }
 ?>
+```
 
 ---
 ---
 
 # Custom Functions
 
+```
 <?php
 
 function say_something(){
@@ -251,11 +253,13 @@ function init(){
 init(); // THIS here is the only single line that is actually being run.
 
 ?>
+```
 
 ---
 
 ## Function parameters
 
+```
 <?php
 
 function exclamate($message){
@@ -267,11 +271,13 @@ function exclamate($message){
 exclamate("Hello there");
 
 ?>
+```
 
 ---
 
 ## Function return values
 
+```
 <?php
 
 function addNumbers($var1, $var2){
@@ -290,6 +296,7 @@ $result = addNumbers($result,10); // I can even use the result in the function i
 echo $result;
 
 ?>
+```
 
 ---
 

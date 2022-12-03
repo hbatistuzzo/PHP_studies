@@ -158,3 +158,62 @@ foreach($numbers as $number){ // $numbers is the array. $number will incorporate
 ?>
 
 ---
+
+# PRACTICE EXERCISE 3
+
+<?php  
+
+/*  Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
+
+
+
+	Step 2: Make a forloop  that displays 10 numbers
+
+
+	Step 3 : Make a switch Statement that test againts one condition with 5 cases
+
+ */
+
+ // Step 1
+ if(4 < 3){
+
+	echo "this will not work dude";}
+
+	elseif(4 > 3){
+		echo "I love PHP";}
+
+	else{
+		echo "this will not work dude";}
+
+//Step 2: Make a forloop  that displays 10 numbers
+
+echo "<br>";
+
+for($i=1;$i<11;$i++){
+	echo $i;
+}
+
+echo "<br>";
+
+//Step 3 : Make a switch Statement that test againts one condition with 5 cases
+
+$condition = 100;
+
+switch($condition){
+	case 20:
+		echo "this won't work";
+		break;
+	case 40:
+		echo "this won't work";
+		break;
+	case 60:
+		echo "this won't work";
+		break;
+	case 80:
+		echo "this won't work";
+		break;
+	case 100:
+		echo "this will work. Your condition is the number " . $condition;
+		break;
+}
+?>

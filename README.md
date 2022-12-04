@@ -390,6 +390,43 @@ echo $sum . "<br>";
 ---
 ---
 
-# Section 5 - PHP Built-in Functions
+# Section 6 - Form data in PHP.
 
-## 
+- We are shifting gears now. The php section goes in the head before anything else, where we process information sent by the form via post format.
+- Only the parts in the form where we set a **name** keyword are being processed so far.
+```
+<?php //php starts here. It's here on the header that we will pick up information before anything.
+
+if(isset($_POST["submitter"])){ //let's use isset function to see if the SUPER GLOBAL $_POST variable (an associative array) is available
+
+    echo "Yes, it works! The submit button was pressed";
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- this form will pick up data that we send through post format. $_POST will be a  SUPER GLOBAL variable -->
+
+<form action="form.php" method="post"> <!-- this is where the processing will be done. The action keyword sends the data to the page form.php, via post -->
+
+    <input type="text" placeholder="Enter Username:">
+    <input type="password" placeholder="Enter Password"><br>
+    <!-- <input type="submit" name="submitter"> as it is we are only sending the submit information right now, through the keyword name! -->
+
+
+
+</form>
+
+    
+</body>
+</html>
+```

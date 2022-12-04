@@ -339,3 +339,19 @@ echo $x; // yields inside. This variable $x has changed!
 ---
 
 ## Constants
+
+
+```
+<?php
+
+$number = 10;
+echo $number; //this is how we define a variable
+
+define("NAME", 1000); // is how to define a constant. First argument is its name, second is the actual value;
+
+echo NAME; //the constant NAME cannot be changed under any cirscumstances.
+?>
+```
+
+---
+

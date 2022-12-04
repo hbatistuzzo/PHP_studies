@@ -355,3 +355,41 @@ echo NAME; //the constant NAME cannot be changed under any cirscumstances.
 
 ---
 
+## Practice 4
+
+```
+	
+	<?php  
+
+ // Step1: Define a function and make it return a calculation of 2 numbers
+
+function summer(){
+
+	$local1 = 20;
+	$local2 = 30;
+	$sum = $local1 + $local2;
+	return $sum;
+}
+
+$sum = summer();
+echo $sum . "<br>";
+
+ // Step 2: Make a function that passes parameters and call it using parameter values
+
+ function calc($num1,$num2){
+
+	$res = cos($num1) + sin($num2);
+	return $res;
+	
+	}
+	
+	echo calc(0,(3.1415/2));
+?>
+```
+
+---
+---
+
+# Section 5 - PHP Built-in Functions
+
+## 

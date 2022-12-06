@@ -524,3 +524,4 @@ Now that this is taken care of, we can communicate with the tables in them datab
 </body>
 </html>
 '''
+
